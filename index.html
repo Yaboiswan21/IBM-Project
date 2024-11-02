@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies of the Future Subscription Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div id="main-container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <h1>Movies of the Future</h1>
+                <p>Get exclusive movie nights with snacks, 3D glasses, and immersive experiences!</p>
+                <button class="subscribe-btn">Subscribe Now</button>
+            </div>
+        </header>
+
+        <!-- Image Section -->
+        <section id="box-image">
+            <img src="movie.webp" alt="Movies of the Future Subscription Box">
+            
+        </section>
+
+        <!-- Subscription Options Section -->
+        <section id="subscription-options">
+            <h2>Pick Your Perfect Box</h2>
+            <div class="subscription-container">
+                <div class="box">
+                    <h3>Standard Movie Night Box</h3>
+                    <p class="price">$39.99</p>
+                    <p>Enjoy a standard movie night experience with handpicked snacks and a curated 3D movie list.</p>
+                    <label for="delivery-date-standard">Select Delivery Date:</label>
+                    <input type="date" id="delivery-date-standard">
+                    <button onclick="redirectToPayment('Standard Movie Night Box', 39.99, 'delivery-date-standard')">Buy Now</button>
+                </div>
+                <div class="box">
+                    <h3>Express Movie Night Box</h3>
+                    <p class="price">$49.99</p>
+                    <p>Get same-day shipping for an instant movie night experience with premium snacks and accessories.</p>
+                    <label for="delivery-date-express">Select Delivery Date:</label>
+                    <input type="date" id="delivery-date-express">
+                    <button onclick="redirectToPayment('Express Movie Night Box', 49.99, 'delivery-date-express')">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Movies of the Future &copy; 2024 | Your premium movie experience delivered</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
